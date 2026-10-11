@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — Yamazakura Japanese Academy</title>
+  <meta name="description" content="Ask about JLPT levels, batches, corporate programs or interpretation. Call or WhatsApp +91 96774 49811.">
+  <link rel="icon" href="assets/yamazakura-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html">
+      <img src="assets/yamazakura-logo.jpg" alt="Yamazakura Japanese Academy" width="46" height="46">
+      <span><span class="brand-name">Yamazakura</span><span class="brand-sub">Japanese Academy</span></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <div class="nav-dropdown">
+        <a href="services.html" class="nav-link" aria-haspopup="true">Services <span class="caret">▾</span></a>
+        <div class="dropdown-menu">
+          <a href="services.html#language"><strong>Japanese Language Training</strong><span>JLPT N5 to N2, spoken Japanese</span></a>
+          <a href="services.html#corporate"><strong>Corporate Training Programs</strong><span>Japanese for teams and organisations</span></a>
+          <a href="services.html#interpretation"><strong>Japanese Interpretation Services</strong><span>Meetings, events, business communication</span></a>
+        </div>
+      </div>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="clients.html" class="nav-link">Clients</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Contact Us</a>
+    </nav>
+
+    <button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About Us</a>
+    <div class="mobile-services">
+      <button type="button" class="mobile-services-toggle" aria-expanded="false" aria-controls="mobile-sub">Services <span class="sign">+</span></button>
+      <div class="mobile-sub" id="mobile-sub" hidden>
+        <a href="services.html#language">Japanese Language Training</a>
+        <a href="services.html#corporate">Corporate Training Programs</a>
+        <a href="services.html#interpretation">Japanese Interpretation Services</a>
+      </div>
+    </div>
+    <a href="gallery.html" class="mobile-link">Gallery</a>
+    <a href="clients.html" class="mobile-link">Clients</a>
+    <div class="mobile-actions">
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      <a href="https://wa.me/919677449811" class="btn btn-outline">WhatsApp Us</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Contact Us</div>
+      <h1 class="h1">Let's start a conversation</h1>
+      <p class="hero-lead">Ask about levels, batches, corporate programs or interpretation. We reply within one working day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CARDS -->
+  <section class="container" style="padding-top:clamp(36px,5vw,64px);">
+    <div class="grid" style="--min:230px; gap:16px">
+      <a href="tel:+919677449811" class="card contact-card">
+        <div class="kanji-badge">電</div>
+        <div class="label">Phone</div>
+        <div class="value">+91 96774 49811</div>
+      </a>
+      <a href="https://wa.me/919677449811" class="card contact-card">
+        <div class="kanji-badge green">話</div>
+        <div class="label">WhatsApp</div>
+        <div class="value">+91 96774 49811</div>
+      </a>
+      <div class="card contact-card">
+        <div class="kanji-badge">信</div>
+        <div class="label">Email</div>
+        <div class="value" style="font-size:16px"><span class="ph">[Email Address]</span></div>
+      </div>
+      <div class="card contact-card">
+        <div class="kanji-badge">所</div>
+        <div class="label">Address</div>
+        <div class="value" style="font-size:16px"><span class="ph">[Address]</span></div>
+        <div class="sub">Tokyo · Osaka · Online across Japan</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="container" style="padding-top:clamp(40px,6vw,80px); padding-bottom:clamp(40px,6vw,80px);">
+    <div class="contact-layout">
+
+      <div class="form-card">
+        <h2>Send an enquiry</h2>
+        <p>Pick what you're interested in and the form asks only what's relevant.</p>
+
+        <form id="enquiry-form" class="form">
+          <input type="hidden" name="interest" value="Japanese Language Training">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="Mobile or WhatsApp number" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+          </div>
+
+          <div class="field">
+            <span class="field-label" id="interest-label" style="margin-bottom:10px">I am interested in</span>
+            <div class="interest-group" role="group" aria-labelledby="interest-label">
+              <button type="button" class="chip-btn red" data-interest="Japanese Language Training">Japanese Language Training</button>
+              <button type="button" class="chip-btn red" data-interest="Corporate Training">Corporate Training</button>
+              <button type="button" class="chip-btn red" data-interest="Interpretation Services">Interpretation Services</button>
+              <button type="button" class="chip-btn red" data-interest="Other">Other</button>
+            </div>
+          </div>
+
+          <fieldset class="subform" data-for="Japanese Language Training">
+            <legend>Language training</legend>
+            <div class="form-row">
+              <div class="field">
+                <label for="f-level">Current Japanese level</label>
+                <select id="f-level" name="current_level">
+                  <option>Complete beginner</option><option>Some self-study</option><option>N5</option><option>N4</option><option>N3</option><option>N2</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-batch">Preferred batch</label>
+                <select id="f-batch" name="preferred_batch">
+                  <option>Weekday morning</option><option>Weekday evening</option><option>Weekend</option><option>Flexible / not sure</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-goal">Learning goal</label>
+              <input id="f-goal" name="learning_goal" type="text" placeholder="e.g. clear N4 this year, or speak with Japanese colleagues">
+            </div>
+          </fieldset>
+
+          <fieldset class="subform" data-for="Corporate Training" hidden>
+            <legend>Corporate training</legend>
+            <div class="form-row">
+              <div class="field">
+                <label for="f-company">Company name</label>
+                <input id="f-company" name="company" type="text" placeholder="Organisation" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="f-size">Number of employees</label>
+                <select id="f-size" name="employees">
+                  <option>1 – 10</option><option>11 – 25</option><option>26 – 50</option><option>50+</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-req">Training requirement</label>
+              <input id="f-req" name="training_requirement" type="text" placeholder="e.g. business Japanese for an offshore delivery team">
+            </div>
+          </fieldset>
+
+          <fieldset class="subform" data-for="Interpretation Services" hidden>
+            <legend>Interpretation</legend>
+            <div class="form-row">
+              <div class="field">
+                <label for="f-company2">Company name</label>
+                <input id="f-company2" name="company" type="text" placeholder="Organisation" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="f-date">Preferred date</label>
+                <input id="f-date" name="preferred_date" type="date" style="padding:13px 14px">
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-service">Service required</label>
+              <select id="f-service" name="service_required">
+                <option>Business meeting</option><option>Online meeting</option><option>Event</option><option>Training session</option><option>Corporate communication</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Anything else we should know"></textarea>
+          </div>
+
+          <div class="form-success" role="status" hidden><strong>✓</strong> Enquiry sent. We'll reply within one working day.</div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span class="spinner" hidden></span><span class="label">Send Enquiry</span>
+          </button>
+        </form>
+      </div>
+
+      <aside class="contact-aside">
+        <div class="wa-card">
+          <div class="serif">話しましょう</div>
+          <h3>Chat with us on WhatsApp</h3>
+          <p>Quickest way to ask about batch timings, fees or a demo class.</p>
+          <a href="https://wa.me/919677449811">Open WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <div class="eyebrow" style="letter-spacing:0.2em; margin-bottom:18px">Follow</div>
+          <div class="follow-links">
+            <a href="#">Instagram <span>→</span></a>
+            <a href="#">YouTube <span>→</span></a>
+            <a href="#">LinkedIn <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="img-frame" style="border-radius:20px; aspect-ratio:4/3;">
+          <img src="assets/batch-celebration.jpeg" alt="A Yamazakura batch celebrating the end of a programme" style="object-position:50% 45%" loading="lazy">
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/yamazakura-logo.jpg" alt="Yamazakura Japanese Academy" width="52" height="52">
+        <span><span class="brand-name">Yamazakura</span><span class="brand-sub">Japanese Academy</span></span>
+      </div>
+      <p class="footer-about">Japanese language training, corporate programs and interpretation services. JLPT N5 to N2, taught with a focus on real conversation.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Quick Links</div>
+      <nav class="footer-links" aria-label="Quick links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+    <div>
+      <div class="footer-title">Services</div>
+      <nav class="footer-links" aria-label="Services">
+        <a href="services.html#language">Japanese Language Training</a>
+        <a href="services.html#corporate">Corporate Training Programs</a>
+        <a href="services.html#interpretation">Japanese Interpretation Services</a>
+        <a href="services.html#jlpt">JLPT Preparation N5 – N2</a>
+      </nav>
+    </div>
+    <div>
+      <div class="footer-title">Contact</div>
+      <div class="footer-contact">
+        <div>Call / WhatsApp<br><a href="tel:+919677449811">+91 96774 49811</a></div>
+        <div>Email<br><span class="ph-dark">[Email Address]</span></div>
+        <div>Locations<br>Tokyo · Osaka · Online across Japan</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div>© 2026 Yamazakura Japanese Academy. All rights reserved.</div>
+      <nav><a href="#">Privacy Policy</a><a href="#">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

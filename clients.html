@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clients — Yamazakura Japanese Academy</title>
+  <meta name="description" content="Organisations that run Japanese language training with Yamazakura, and what a corporate engagement looks like.">
+  <link rel="icon" href="assets/yamazakura-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html">
+      <img src="assets/yamazakura-logo.jpg" alt="Yamazakura Japanese Academy" width="46" height="46">
+      <span><span class="brand-name">Yamazakura</span><span class="brand-sub">Japanese Academy</span></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <div class="nav-dropdown">
+        <a href="services.html" class="nav-link" aria-haspopup="true">Services <span class="caret">▾</span></a>
+        <div class="dropdown-menu">
+          <a href="services.html#language"><strong>Japanese Language Training</strong><span>JLPT N5 to N2, spoken Japanese</span></a>
+          <a href="services.html#corporate"><strong>Corporate Training Programs</strong><span>Japanese for teams and organisations</span></a>
+          <a href="services.html#interpretation"><strong>Japanese Interpretation Services</strong><span>Meetings, events, business communication</span></a>
+        </div>
+      </div>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="clients.html" class="nav-link is-active">Clients</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Contact Us</a>
+    </nav>
+
+    <button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About Us</a>
+    <div class="mobile-services">
+      <button type="button" class="mobile-services-toggle" aria-expanded="false" aria-controls="mobile-sub">Services <span class="sign">+</span></button>
+      <div class="mobile-sub" id="mobile-sub" hidden>
+        <a href="services.html#language">Japanese Language Training</a>
+        <a href="services.html#corporate">Corporate Training Programs</a>
+        <a href="services.html#interpretation">Japanese Interpretation Services</a>
+      </div>
+    </div>
+    <a href="gallery.html" class="mobile-link">Gallery</a>
+    <a href="clients.html" class="mobile-link is-active">Clients</a>
+    <div class="mobile-actions">
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      <a href="https://wa.me/919677449811" class="btn btn-outline">WhatsApp Us</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Clients</div>
+      <h1 class="h1">Our clients</h1>
+      <p class="hero-lead" style="max-width:620px">Organisations that have run Japanese training with us, and the people who sat in those rooms.</p>
+    </div>
+  </section>
+
+  <!-- LOGO GRID — replace each [Client Logo] with <img src="assets/clients/name.png" alt="Company name"> -->
+  <section class="container" style="padding-top:clamp(48px,7vw,96px); padding-bottom:clamp(48px,7vw,96px);" data-reveal>
+    <div class="logo-grid fixed">
+      <div>[Client Logo]</div><div>[Client Logo]</div><div>[Client Logo]</div><div>[Client Logo]</div><div>[Client Logo]</div>
+      <div>[Client Logo]</div><div>[Client Logo]</div><div>[Client Logo]</div><div>[Client Logo]</div><div>[Client Logo]</div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DELIVER -->
+  <section class="bg-navy" data-reveal>
+    <div class="container section-md">
+      <div class="split" style="gap:clamp(32px,5vw,64px)">
+        <div style="flex:1 1 380px">
+          <div class="eyebrow">For Organisations</div>
+          <h2 class="h2" style="font-size:clamp(28px,3.2vw,40px)">What a corporate engagement looks like</h2>
+          <p class="dark-copy">Training is designed around the team's actual work — the meetings they sit in, the documents they read, the colleagues they speak to. Sessions run on site or online, at a pace the schedule can absorb.</p>
+          <div class="numbered">
+            <div><span class="serif">一</span><span>Requirement study with the L&amp;D or engineering lead before anything is scheduled</span></div>
+            <div><span class="serif">二</span><span>A curriculum matched to the team's starting level and target JLPT band</span></div>
+            <div><span class="serif">三</span><span>Live sessions with conversation practice and workplace etiquette in every class</span></div>
+            <div><span class="serif">四</span><span>Periodic assessment and a progress report you can take to your stakeholders</span></div>
+          </div>
+        </div>
+        <div class="img-frame" style="flex:1 1 320px; aspect-ratio:4/3; background:var(--navy-2); box-shadow:0 20px 48px rgba(0,0,0,0.3);">
+          <img src="assets/batch-group-large.jpeg" alt="A corporate Japanese training batch at the close of a programme" style="object-position:50% 42%" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="container section-md" data-reveal>
+    <div class="section-head" style="margin-bottom:clamp(28px,4vw,44px)">
+      <div class="eyebrow">Testimonials</div>
+      <h2 class="h2">In their words</h2>
+      <p class="lead" style="font-size:16px; margin-top:14px">What learners and organisations say about training with Yamazakura.</p>
+    </div>
+    <div class="grid" style="--min:300px">
+      <figure class="card card-hover quote-card" style="margin:0">
+        <div class="mark">”</div>
+        <p><span class="ph">[Testimonial]</span> — two to four sentences on what changed for them. The card holds a short quote or a long one without the grid going ragged.</p>
+        <figcaption class="quote-by"><div class="avatar-ph">[Photo]</div><div><strong>[Client Name]</strong><span>[Designation] · [Company]</span></div></figcaption>
+      </figure>
+      <figure class="card card-hover quote-card" style="margin:0">
+        <div class="mark">”</div>
+        <p><span class="ph">[Testimonial]</span> — two to four sentences on what changed for them. The card holds a short quote or a long one without the grid going ragged.</p>
+        <figcaption class="quote-by"><div class="avatar-ph">[Photo]</div><div><strong>[Client Name]</strong><span>[Designation] · [Company]</span></div></figcaption>
+      </figure>
+      <figure class="card card-hover quote-card" style="margin:0">
+        <div class="mark">”</div>
+        <p><span class="ph">[Testimonial]</span> — two to four sentences on what changed for them. The card holds a short quote or a long one without the grid going ragged.</p>
+        <figcaption class="quote-by"><div class="avatar-ph">[Photo]</div><div><strong>[Client Name]</strong><span>[Designation] · [Company]</span></div></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-wrap" data-reveal>
+    <div class="cta-band">
+      <div class="cta-inner">
+        <div>
+          <h2 style="font-size:clamp(28px,3.4vw,42px); line-height:1.18">Looking for Japanese language training for your organisation?</h2>
+          <p>Send us the team size and the level you're aiming for. We'll come back with a proposal.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html?interest=corporate" class="btn btn-white">Contact Us</a>
+          <a href="https://wa.me/919677449811" class="btn btn-ghost">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/yamazakura-logo.jpg" alt="Yamazakura Japanese Academy" width="52" height="52">
+        <span><span class="brand-name">Yamazakura</span><span class="brand-sub">Japanese Academy</span></span>
+      </div>
+      <p class="footer-about">Japanese language training, corporate programs and interpretation services. JLPT N5 to N2, taught with a focus on real conversation.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Quick Links</div>
+      <nav class="footer-links" aria-label="Quick links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+    <div>
+      <div class="footer-title">Services</div>
+      <nav class="footer-links" aria-label="Services">
+        <a href="services.html#language">Japanese Language Training</a>
+        <a href="services.html#corporate">Corporate Training Programs</a>
+        <a href="services.html#interpretation">Japanese Interpretation Services</a>
+        <a href="services.html#jlpt">JLPT Preparation N5 – N2</a>
+      </nav>
+    </div>
+    <div>
+      <div class="footer-title">Contact</div>
+      <div class="footer-contact">
+        <div>Call / WhatsApp<br><a href="tel:+919677449811">+91 96774 49811</a></div>
+        <div>Email<br><span class="ph-dark">[Email Address]</span></div>
+        <div>Locations<br>Tokyo · Osaka · Online across Japan</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div>© 2026 Yamazakura Japanese Academy. All rights reserved.</div>
+      <nav><a href="#">Privacy Policy</a><a href="#">Terms</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
